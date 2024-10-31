@@ -1,0 +1,71 @@
+{
+    "results": [
+        {
+            "id": "7e6efbe3-0ff1-4b67-8c3f-d38095e3bc5b",
+            "date": "2023-11-06",
+            "start": 1699263000000,
+            "finish": 1699294500000,
+            "breaks": [
+                {
+                    "id": "948cc21b-703a-4375-8e2b-9b32990e0f8f",
+                    "start": 1699271220000,
+                    "finish": 1699272605277,
+                    "paid": false
+                }
+            ],
+            "allowances": [
+                {
+                    "id": "27325af4-34bb-4afe-9784-19a6554bb364",
+                    "value": 0.5,
+                    "cost": 2.5
+                },
+                {
+                    "id": "8f20befd-9c3c-480e-a233-a81b2ff70a98",
+                    "value": 0.5,
+                    "cost": 29.7
+                },
+                {
+                    "id": "79bb6b28-ede6-4e4a-b1e8-04178f07f3da",
+                    "value": 1.5,
+                    "cost": 12.2
+                }
+            ],
+            "award_interpretations": []
+        },
+        {
+            "id": "8b88b554-82cc-4734-b351-0e5c546f50a4",
+            "date": "2023-11-07",
+            "start": 1699345800000,
+            "finish": 1699383600000,
+            "breaks": [
+                {
+                    "id": "bff76d70-5261-4285-90e8-6aaff232f732",
+                    "start": 1699353780000,
+                    "finish": 1699355324388,
+                    "paid": true
+                }
+            ],
+            "allowances": [],
+            "award_interpretations": [
+                {
+                    "id": "778244cd-0803-46f1-bef2-73f829414a94",
+                    "date": "2023-11-07",
+                    "units": 1.0,
+                    "cost": 62.8
+                },
+                {
+                    "id": "6ea5b679-c11c-4602-bffa-f9e08acc10ea",
+                    "date": "2023-11-07",
+                    "units": 1.5,
+                    "cost": 55.9
+                }
+            ]
+        }
+    ],
+    "links": {
+        "base": "http://localhost:8000"
+    },
+    "start": 0,
+    "limit": 7,
+    "size": 7
+}
