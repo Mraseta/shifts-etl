@@ -202,7 +202,13 @@ class ETL:
         kpi_df = pd.DataFrame(kpi_data)
         kpi_df["kpi_date"] = datetime.now().date()
         kpi_df["kpi_value"] = kpi_df["kpi_value"].astype(float)
-        kpi_df.to_sql("kpis", self.engine, if_exists="append", index=False)
+
+        try:
+            kpi_df.to_sql("kpis", self.engine, if_exists="append", index=False)
+        except Exception as e:
+            self.logger.error("Error inserting KPIs to database.")
+            raise Exception(repr(e))
+
         self.logger.info("Successfully inserted KPIs data")
 
 
